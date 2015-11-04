@@ -22,6 +22,10 @@ Loop, 8
 	}	
 }
 
+Clear(){
+  WinMenuSelectItem , , , Measure, Clear Measure
+}
+
 ToggleVert(x) {
  ChoseChannel(x)
  ControlClick, Button3, ,,,, NA x5 y5  
@@ -38,6 +42,24 @@ ControlGet, OutVar, Enabled,, Edit3
 	   ControlClick, ToolbarWindow321, ,,,, NA x550 y5  
 	}
 }
+
+Gui, Add, Button,, RMS
+Gui, Add, Button,, Test
+return  ; End of auto-execute section. The script is idle until the user does something.
+
+ButtonTest: 
+MsgBox Button Press
+return
+
+ButtonRMS: 
+WinMenuSelectItem , , , Measure, Vertical, RMS
+return
+
+
+Measure() {
+ Gui, Show,, Simple Input Example
+}
+
 
 
 #IfWinActive, ahk_exe HANTEK1008.exe
@@ -58,5 +80,7 @@ F8::ToggleVert(8)
 7::ChoseChannel(7)
 8::ChoseChannel(8)
 a::AllOff()
+c::Clear()
+m::Measure()
 Space::RunMode()
 

@@ -16,6 +16,7 @@ http://www.hantek.com/en/ProductDetail_136.html
 | 1 to 8 | select a Vertical channel (and Measure Source channel too)  |
 | F1 to F8  | toggle a channel ON/OFF |
 | a | all channels OFF  |
+| c | Clear Measurements |
 | space | run/pause  |
 
 
