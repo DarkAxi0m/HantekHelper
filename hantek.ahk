@@ -1,13 +1,17 @@
-ChoseChanel(x)
+ 
+
+ChoseChannel(x)
 {
   Control, Choose,%x% , ComboBox3
+  ; select the channel  in the measure menu too
+   WinMenuSelectItem , , , Measure, Source, CH%x%
 }
 
 AllOff()
 {
 Loop, 8
 	{
-		ChoseChanel(A_Index)
+		ChoseChannel(A_Index)
 
 		ControlGet, OutVar, Checked,, Button3
 
@@ -19,7 +23,7 @@ Loop, 8
 }
 
 ToggleVert(x) {
- ChoseChanel(x)
+ ChoseChannel(x)
  ControlClick, Button3, ,,,, NA x5 y5  
 }
 
@@ -36,7 +40,7 @@ ControlGet, OutVar, Enabled,, Edit3
 }
 
 
-#IfWinActive, ahk_class Afx:400000:8:10003:0:5d0b5b
+#IfWinActive, ahk_exe HANTEK1008.exe
 F1::ToggleVert(1)
 F2::ToggleVert(2)
 F3::ToggleVert(3)
@@ -45,13 +49,14 @@ F5::ToggleVert(5)
 F6::ToggleVert(6)
 F7::ToggleVert(7)
 F8::ToggleVert(8)
-1::ChoseChanel(1)
-2::ChoseChanel(2)
-3::ChoseChanel(3)
-4::ChoseChanel(4)
-5::ChoseChanel(5)
-6::ChoseChanel(6)
-7::ChoseChanel(7)
-8::ChoseChanel(8)
+1::ChoseChannel(1)
+2::ChoseChannel(2)
+3::ChoseChannel(3)
+4::ChoseChannel(4)
+5::ChoseChannel(5)
+6::ChoseChannel(6)
+7::ChoseChannel(7)
+8::ChoseChannel(8)
 a::AllOff()
 Space::RunMode()
+
