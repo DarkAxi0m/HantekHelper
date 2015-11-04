@@ -3,14 +3,20 @@ Some helpers to make using the Hantek Scope software easier to use
 
 
 # Descrition 
-Right now, just my simple AutoHotKey Script 
+Right now, just my simple AutoHotKey Script;  http://ahkscript.org/
 
 
 Currently Tested/Used in HANTEK1008 Ver1.0.10     
 http://www.hantek.com/en/ProductDetail_136.html
 
 
-
+# Use
+| Key  | Function |
+| ------------- | ------------- |
+| F1 to F8  | toggle a channel |
+| 1 to 8 | select a channel  |
+| a | all channels off  |
+| space | run/pause  |
 
 
 # Licence
