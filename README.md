@@ -13,9 +13,9 @@ http://www.hantek.com/en/ProductDetail_136.html
 # Use
 | Key  | Function |
 | ------------- | ------------- |
-| F1 to F8  | toggle a channel |
-| 1 to 8 | select a channel  |
-| a | all channels off  |
+| 1 to 8 | select a Vertical channel (and Measure Source channel too)  |
+| F1 to F8  | toggle a channel ON/OFF |
+| a | all channels OFF  |
 | space | run/pause  |
 
 
